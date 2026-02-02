@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en" data-beasties-container>
+  <head>
+    <meta charset="utf-8">
+    <title>asfood</title>
+    <base href="/asfood/">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <!-- 
+      IMPORTANTE: GitHub Pages SPA routing fix
+      Ripristina il path originale salvato da 404.html
+      Questo previene errori 404 al refresh della pagina
+    -->
+    <script type="text/javascript">
+      // Single Page Apps for GitHub Pages
+      // MIT License
+      // https://github.com/rafgraph/spa-github-pages
+      (function(l) {
+        if (l.search[1] === '/' ) {
+          var decoded = l.search.slice(1).split('&').map(function(s) { 
+            return s.replace(/~and~/g, '&')
+          }).join('?');
+          window.history.replaceState(null, null,
+              l.pathname.slice(0, -1) + decoded + l.hash
+          );
+        }
+      }(window.location))
+    </script>
+  <style>:root{--p-container-max-width:1200px;--p-container-padding-x:2rem;--p-grid-gap:2rem;--p-section-header-margin-bottom:3rem;--p-heading-margin-bottom:1rem;--p-heading-1-font-size:3rem;--p-heading-1-font-size-mobile:2rem;--p-heading-1-font-weight:700;--p-text-lg-font-size:1.25rem;--p-text-base-font-size:1rem;--p-border-radius-xl:1rem;--p-transition-duration:.3s}html{font-size:16px;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale;scroll-behavior:smooth}body{margin:0;padding:0;line-height:1.6;min-height:100vh;font-family:-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Oxygen,Ubuntu,Cantarell,Fira Sans,Droid Sans,Helvetica Neue,sans-serif}</style><link rel="stylesheet" href="styles.12d9ba36fc9945c9.css" media="print" onload="this.media='all'"><noscript><link rel="stylesheet" href="styles.12d9ba36fc9945c9.css"></noscript></head>
+  <body>
+    <app-root></app-root>
+  <script src="runtime.476a0cf8b9f0842c.js" type="module"></script><script src="main.eba6e124f303fbd1.js" type="module"></script></body>
+</html>

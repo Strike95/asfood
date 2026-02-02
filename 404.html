@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>asfood</title>
+    <!-- 
+      IMPORTANTE: GitHub Pages redirect per SPA routing
+      Questo script salva il path reale e lo passa a index.html
+      tramite sessionStorage per evitare errori 404 al refresh
+    -->
+    <script type="text/javascript">
+      // Salva il path e la query string per ripristinarli in index.html
+      var pathSegmentsToKeep = 1; // Numero di segmenti del path da mantenere (0 per root repo, 1 per /repo-name/)
+      
+      var l = window.location;
+      l.replace(
+        l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
+        l.pathname.split('/').slice(0, 1 + pathSegmentsToKeep).join('/') + '/?/' +
+        l.pathname.slice(1).split('/').slice(pathSegmentsToKeep).join('/').replace(/&/g, '~and~') +
+        (l.search ? '&' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+        l.hash
+      );
+    </script>
+  </head>
+  <body>
+  </body>
+</html>
